@@ -1,4 +1,4 @@
-import logo from './sheep.png';
+import logo from './cow.png';
 import './App.css';
 
 function App() {
@@ -7,7 +7,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Press space to start counting!
         </p>
         <a
           className="App-link"
@@ -15,7 +15,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Join HACK&ROLL 2022
+          Join HACK&ROLL 2022!
         </a>
       </header>
     </div>
