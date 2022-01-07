@@ -2,18 +2,17 @@
   text-align: center;
 }
 
-.App-logo {
+.spin {
   height: 30vmin;
   pointer-events: none;
+  animation: spin 3s linear infinite;
 }
-
-
 
 .App-link {
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
+@keyframes spin {
   from {
     transform: rotate(0deg);
   }

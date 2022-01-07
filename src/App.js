@@ -33,28 +33,18 @@ class App extends React.Component {
       <div className="App">
       <header className="App-header">
       <p>You have jumped {this.state.count} times</p>
-      {this.state.animate && (<div> 
+      {this.state.animate? (<div> 
           <img src={cow} className="jump" alt="logo" onAnimationEnd={() => this.setAnimateFalse()}/> 
-          </div>)} 
-      <img src={moon} className="App-logo" alt="logo" />
+          </div>): <div></div>} 
+      <img src={moon} className="spin" alt="logo" />
       <p>
         Can't sleep? Start counting the number of cows that jumped over the moon!
       </p>
       <button onClick={() => this.updateCount()}> Jump! </button>
-      {/* <a
-        className="App-link"
-        href="https://hacknroll.nushackers.org/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-
-        Join HACK&ROLL 2022!
-      </a> */}
       </header>
       </div>
       );
   }
-    
 }
 
-export default App;
+export default App
