@@ -3,7 +3,7 @@
     transform-origin: 50% 50%;
     animation: jump 1s linear;
     animation-iteration-count: 1;
-    margin-left: -1500px
+    margin-left: -80%
   }
   
   @keyframes jump {
@@ -14,5 +14,4 @@
     75%  {transform: translate(75%,-40%);}
     80% {transform: translate(80%,0);}
     100% {transform: translate(100%,0);}
-  
   }

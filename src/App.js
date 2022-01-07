@@ -3,16 +3,15 @@ import moon from './moon.png';
 import './App.css';
 import React from 'react';
 import './CowJump.css';
-import logo from './cow.png';
+import cow from './cow.png';
 
 
 class App extends React.Component {
   constructor(props){
     super(props);
-    console.log("hello")
     this.state = {
       count:0,
-      animate:false
+      animate:0
     }
  }
   updateCount() {
@@ -20,14 +19,12 @@ class App extends React.Component {
   }
 
 
-  setAnimateTrue() {
+  setAnimateFalse() {
     this.setState({animate: false});
   }
 
   updateCount() {
-    this.setState((prevState) => ( {count: prevState.count + 1, animate: true} ));
-    setTimeout(1000);
-    this.setAnimateTrue();
+    this.setState((prevState) => ( {count: prevState.count + 1, animate: true} )); 
   }
 
 
@@ -35,23 +32,24 @@ class App extends React.Component {
     return (
       <div className="App">
       <header className="App-header">
-      {this.state.animate && (<div> <p>You have jumped {this.state.count} times</p>
-          <img src={logo} className="jump" alt="logo" /> 
+      <p>You have jumped {this.state.count} times</p>
+      {this.state.animate && (<div> 
+          <img src={cow} className="jump" alt="logo" onAnimationEnd={() => this.setAnimateFalse()}/> 
           </div>)} 
-       {/* <CowJump count={this.state.count} forceUpdate={this.state.forceUpdate}/>  */}
       <img src={moon} className="App-logo" alt="logo" />
       <p>
-        Press space to start counting!
+        Can't sleep? Start counting the number of cows that jumped over the moon!
       </p>
       <button onClick={() => this.updateCount()}> Jump! </button>
-      <a
+      {/* <a
         className="App-link"
         href="https://hacknroll.nushackers.org/"
         target="_blank"
         rel="noopener noreferrer"
       >
+
         Join HACK&ROLL 2022!
-      </a>
+      </a> */}
       </header>
       </div>
       );
