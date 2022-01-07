@@ -1,11 +1,13 @@
-import logo from './cow.png';
+import cow from './cow.png';
+import moon from './moon.png';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="jump" alt="logo" />
+        <img src={cow} className="jump" alt="logo" />
+        <img src={moon} className="App-logo" alt="logo" />
         <p>
           Press space to start counting!
         </p>
