@@ -14,19 +14,14 @@ class App extends React.Component {
       animate:0
     }
  }
-  updateCount() {
-    this.setState({count: this.state.count + 1})
-  }
-
-
+  
   setAnimateFalse() {
     this.setState({animate: false});
   }
 
   updateCount() {
-    this.setState((prevState) => ( {count: prevState.count + 1, animate: true} )); 
+     this.setState((prevState) => ( {count: prevState.count + 1, animate: true} )); 
   }
-
 
   render() {
     return (
