@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+import logo from './hacknroll.png';
 import './App.css';
 
 function App() {
@@ -11,11 +11,11 @@ function App() {
         </p>
         <a
           className="App-link"
-          href="https://reactjs.org"
+          href="https://hacknroll.nushackers.org/"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          Join HACK&ROLL 2022
         </a>
       </header>
     </div>
