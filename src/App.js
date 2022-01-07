@@ -1,4 +1,5 @@
 import CowJump from './CowJump.js';
+import moon from './moon.png';
 import './App.css';
 import React from 'react';
 
@@ -19,6 +20,7 @@ class App extends React.Component {
       <div className="App">
       <header className="App-header">
       <CowJump count={this.state.count}/>
+      <img src={moon} className="App-logo" alt="logo" />
       <p>
                 Press space to start counting!
               </p>
@@ -30,6 +32,7 @@ class App extends React.Component {
               >
                 Join HACK&ROLL 2022!
               </a>
+
       </header>
       </div>
       );

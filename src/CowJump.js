@@ -5,8 +5,8 @@ import './CowJump.css';
 class CowJump extends React.Component {
     render() {
         return (
-          <div><img src={logo} className="jump" alt="logo" />
-            <p>You have jumped {this.props.count} times</p>
+          <div> <p>You have jumped {this.props.count} times</p>
+          <img src={logo} className="jump" alt="logo" /> 
           </div>  
         );
     }
