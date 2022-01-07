@@ -2,6 +2,26 @@
   text-align: center;
 }
 
+.App-logo {
+  height: 30vmin;
+  pointer-events: none;
+}
+
+
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 .App-header {
   background-image: url(background-sky-1.jpg);
   background-repeat: no-repeat;
@@ -23,14 +43,17 @@
 .jump {
   height: 30vmin;
   transform-origin: 50% 50%;
-  animation: jump .5s linear;
+  animation: jump 1s linear;
   animation-iteration-count: 1;
+  margin-left: -20%
 }
 
 @keyframes jump {
-  0%   {transform: translate(-50%,0);}
-  25%  {transform: translate(-25%,-40%);}
-  50%  {transform: translate(0,-50%);}
-  75%  {transform: translate(25%,-40%);}
-  100% {transform: translate(50%,0);}
+  0%   {transform: translate(0,0);}
+  20%   {transform: translate(20%,0);}
+  25%  {transform: translate(25%,-40%);}
+  50%  {transform: translate(50,-50%);}
+  75%  {transform: translate(75%,-40%);}
+  80% {transform: translate(80%,0);}
+  100% {transform: translate(100%,0);}
 }
