@@ -1,4 +1,4 @@
-import logo from './hacknroll.png';
+import logo from './sheep.png';
 import './App.css';
 
 function App() {
