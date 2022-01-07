@@ -1,25 +1,40 @@
-import logo from './cow.png';
+import CowJump from './CowJump.js';
 import './App.css';
+import React from 'react';
 
-function App() {
-  return (
-    <div className="App">
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      count:0
+    }
+  }
+
+  setState() {
+    this.state.count = this.state.count + 1;
+  }
+
+  render() {
+    return (
+      <div className="App">
       <header className="App-header">
-        <img src={logo} className="jump" alt="logo" />
-        <p>
-          Press space to start counting!
-        </p>
-        <a
-          className="App-link"
-          href="https://hacknroll.nushackers.org/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Join HACK&ROLL 2022!
-        </a>
+      <CowJump count={this.state.count}/>
+      <p>
+                Press space to start counting!
+              </p>
+              <a
+                className="App-link"
+                href="https://hacknroll.nushackers.org/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Join HACK&ROLL 2022!
+              </a>
       </header>
-    </div>
-  );
+      </div>
+      );
+  }
+    
 }
 
 export default App;
