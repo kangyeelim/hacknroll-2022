@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/hacknroll-2022/static/css/main.259ebb59.css",
+    "main.js": "/hacknroll-2022/static/js/main.27197e17.js",
+    "static/js/787.f0c8c1ba.chunk.js": "/hacknroll-2022/static/js/787.f0c8c1ba.chunk.js",
+    "static/media/background-sky-1.jpg": "/hacknroll-2022/static/media/background-sky-1.18a88c845597ecf6ed61.jpg",
+    "static/media/cow.png": "/hacknroll-2022/static/media/cow.f66859806bd2149f3600.png",
+    "static/media/moon.png": "/hacknroll-2022/static/media/moon.61af991d57951724a617.png",
+    "index.html": "/hacknroll-2022/index.html",
+    "main.259ebb59.css.map": "/hacknroll-2022/static/css/main.259ebb59.css.map",
+    "main.27197e17.js.map": "/hacknroll-2022/static/js/main.27197e17.js.map",
+    "787.f0c8c1ba.chunk.js.map": "/hacknroll-2022/static/js/787.f0c8c1ba.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.259ebb59.css",
+    "static/js/main.27197e17.js"
+  ]
+}
